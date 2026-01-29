@@ -1,0 +1,584 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+p,h1,h2,h3,h4,h5:hover{
+    cursor: default;
+}
+body{
+    scroll-behavior: smooth;
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap; */
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+/* .upbox{
+    position: relative;
+    height: 35vh;
+    width: 30vw;
+    background-color: blue;
+    border-bottom-right-radius:15px ;
+
+}
+.container{
+    margin-left: 500px;
+}
+.downbox{
+    height: 25vh;
+    width: 30vw;
+    background-color: pink;
+    position: relative;
+    border-top: 10px solid white;
+    border-top-right-radius:25px ;
+}
+.secbox{
+    height: 15vh;
+    width: 15vw;
+    background-color:pink;
+    position: absolute;
+    left: 0;
+    border-top-right-radius: 15px;
+    bottom: calc(25vh - 10px);
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+}
+.secbox::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: transparent;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    box-shadow: -5px -5px 0 white;
+}
+.secbox::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 5px -5px 0 white;
+}
+.upbox::after{
+    position: absolute;
+    content: "";
+    bottom: .4px;
+    right: 203px;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0  white;
+
+} */
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.navbar{
+    position: absolute;
+    top: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+.navlist{
+    background: rgb(48, 47, 47);
+    padding: 20px;
+    border-radius: 10px;
+}
+.navbar .navlist a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    position: relative;
+} 
+.navbar .navlist a:hover{
+    color: rgba(255, 255, 255, 0.749);
+}
+.navbar .navlist a::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    width: 0;
+    left: 0;
+    height: 3px;
+    background: rgb(217, 15, 15);
+    transition: all 1s ease;
+
+}
+.navbar .navlist a:hover::after{
+    width: 100%;
+}
+
+
+
+
+.boxes{
+    height: 40vh;
+    width: 40vh;
+}
+.camerapic{
+    top: 80px;
+    position: absolute;
+    height: 180vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    
+}
+.camerapic img{
+    position: relative;
+    left: 500px;
+    top: 200px;
+    height: 50vh;
+    width: 40vw;
+    transition: .1s ease-in-out;
+    transform: rotate(12deg);
+    
+}
+
+
+
+
+
+.camerapic img{
+   position: relative;
+}
+
+                    /* hero-section starts here */
+
+.hero-section{
+    height: 80vh;
+    width: 90vw;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+.herotxt-up{
+    font-size: 5rem;
+    position: absolute;
+    left: 10%;
+    z-index: -2;
+}
+.herotxt-down{
+    top: 130px;
+    font-size: 5rem;
+    position: absolute;
+    left: 25%;
+    z-index: -2;
+}
+.page1-oval{
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 340px;
+    left: 120px;
+    border: inset 8px solid hsla(244, 87%, 40%, 0.8);
+    padding: 10px 40px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.864);
+    color: white;
+}
+.lorem-right{
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lorem-left{
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.lo{
+    height: 800px;
+    width: 400px;
+}
+
+                /* page2 starts here */
+
+.page2{
+
+    height: 100vh;
+    width: 100vw;
+    clip-path: path("M 0,0 L 0,819 L 1489,819 L 1489,119 L 0,50  Z");
+    top: 100px;
+    left: 60px;
+    background-color: grey;
+    z-index: -3;
+    border: 2px solid red;
+    
+
+}
+.page2-oval{
+    position: relative;
+    bottom: 680px;
+    right: 300px;
+    transform: rotate(-10deg);
+    border: inset 8px solid hsla(244, 87%, 40%, 0.8);
+    padding: 10px 40px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.864);
+    color: white;
+}
+.page2 h2{
+    position: relative;
+    left: 10%;
+    top: 400px;
+}
+.hd {
+    position: relative;
+    bottom: 740px;
+    left: -200px;
+    font-size: 6rem;
+    word-spacing: 5.8rem;
+    letter-spacing: 1rem;
+    transform: rotate(3deg);
+    z-index: -1;
+    color: rgba(59, 54, 54, 0.859);
+    text-shadow: 2px 4px 10px rgba(200, 199, 199, 0.693);
+}
+.aboutcam-left{
+    position: relative;
+    bottom: 600px;
+    left: -300px;
+    width: 370px;
+    flex-wrap: wrap;
+    color: white;
+    
+}
+.aboutcam-left h2{
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+}
+.aboutcam-left p{
+    font-size: 1.3rem;
+    margin-top: 15px;
+    word-spacing: .5rem;
+}
+.aboutcam-right{
+    position: relative;
+    bottom: 650px;
+    right: -300px;
+    width: 350px;
+    color: white;
+}
+.aboutcam-right h2{
+    font-size: 1.5rem;
+}
+.aboutcam-right p{
+    font-size: 1.3rem;
+
+    margin-top: 15px;
+    word-spacing: .5rem;    
+}
+
+                /* page3 starts here */
+
+.page3{
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+    background-color: rgba(186, 183, 183, 0.427);
+    margin-top: -510px;
+    display: flex;
+    justify-content: center;
+    z-index: -7;
+}
+.page3 .container{
+    position: relative;
+    width: 89%;
+    height: 85%;
+
+}
+.page3-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header{
+    display: flex;
+    
+}
+.header h1{
+    font-size: 3rem;
+    margin-top: 40px;
+    
+    letter-spacing: .1rem;
+    word-spacing: 1.5rem;
+}
+.page3-lorem  p {
+    width: 400px;
+    margin-left: 390px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.order p{
+    width: 150px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 7px;
+    font-size: 1.6rem;
+    color: grey;
+    background: red;
+    color: white;
+    border-radius: 50%;
+}
+.imgbox img{
+    height: 400px;
+    width: 500px;
+    position: relative;
+    left: 300px;
+    top: 100px;
+    z-index: -1;
+    
+}
+.smallimg  img{
+    border-radius: 8px;
+    height: 200px;
+    width: 300px;
+    border: 4px solid white;
+}
+.smallimg-right img{
+    border-radius: 8px;
+    height: 200px;
+    width: 300px;
+    border: 4px solid white;
+}
+
+
+                /* page4 starts here */
+
+.page4{
+    height: 100vh;
+    width: 100vw;
+    background: grey;
+    margin-top: -120px;
+    clip-path: path("M 0,80 L 0,819 L 1490,819 L 1490,0  Z");
+}
+.page4-img{
+    margin-top: -90px;
+    width: max-content;
+}
+.page4-img img{
+    height: 400px;
+    width: 500px;
+    margin-left: 300px;
+    margin-right: -200px;
+}
+.page4 h1{
+    font-size: 12rem;
+    margin-left: 200px;
+    color: rgba(58, 56, 56, 0.996);
+    margin-top: 20px;
+    letter-spacing: 1.5rem;
+    transform: rotate(-3deg);
+    text-shadow: 2px 4px 10px rgb(177, 177, 177);
+}
+.page4left {
+    color: white;
+    position: relative;
+    left: 900px;;
+    margin-top: 90px;
+    width: 290px;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.page4right{
+    position: absolute;
+    right: 100px;
+    
+    padding: 20px 30px;
+    border-radius: 50%;
+    color: white;
+    right: 900px;
+    background-color: rgb(225, 28, 28);
+}
+                    /* photo-booth starts here */
+
+.photo-booth{
+    height: 80vh;
+    width: 90vw;
+    position: relative;
+}
+.booth-left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.pic-cont{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+}
+.pics img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -50px;
+}
+.booth-right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: -20px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.booth-right h3{
+    letter-spacing: .3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* 
+                    Footer Starts here */
+
+footer{
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: rgb(197, 79, 20);
+    clip-path: path("M 0,20 L 0,614 L 1490,614 L 1490,150   Z");
+}
+.footer-info{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: white;
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-info .products , .help{
+    display: flex;
+    flex-direction: column;
+}
+.footer-info a{
+    color: rgb(208, 200, 200);
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-mail{
+    position: absolute;
+    width: 200px;
+    top: 250px;
+    display: flex;
+    gap: 10px;
+    left: 600px;
+    
+    
+}
+.mailbox input{
+    padding: 10px 80px;
+    border-radius: 25px;
+    border: white;
+    outline: 2px solid rgba(255, 255, 255, 0.59);
+    background: transparent;
+}
+.mailbox input::placeholder{
+    color: rgba(255, 255, 255, 0.592);
+    font-size: 1rem;
+}
+.joinbox{
+   
+    
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.footer-social{
+    position: absolute;
+    right: 100px;
+    top: 250px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.footermaintxt{
+    top: 240px;
+    position: relative;
+    font-size: 8rem;
+    left: 300px;
+    letter-spacing: 4rem;
+    color: rgba(255, 255, 255, 0.879);
+}
+.footermaintxt img{
+    bottom: 70px;
+    left: -250px;
+    position: absolute;
+    height: 240px;
+}
+
+
+.pic-cont{
+    animation: rotate  ease-in-out ;
+    animation-range: entry 0% cover 40%;
+    animation-timeline: view();
+
+}
+
+@keyframes rotate {
+    0%{
+        scale: 0;
+        transform: rotate(0deg);
+    }
+    50%{
+        filter: blur(4px);
+        scale: .5;
+        transform: rotate(180deg);
+    }
+    100%{
+        scale: 1;
+        transform: rotate(360deg);
+    }
+    
+}
+.booth-right{
+    
+    animation: booth-right ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 60%;
+}
+@keyframes booth-right {
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
